@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Shoes One</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Nuestro Catalogo</h1>
+			<section class="menu">
+                <nav>
+                    <ul class="item">
+                        <li ><a href="../homepage/index.html">Shoes One</a></li>              
+                    </ul>
+                </nav>
+            </section>
+			<section class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<section class="count-products">
+						<span id="contador-productos">0</span>
+					</section>
+				</div>
+
+				<section class="container-cart-products hidden-cart">
+					<main class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+						</div>
+					</main>
+
+					<main class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</main>
+					<p class="cart-empty">El carrito está vacío</p>
+				</section>
+			</section>
+		</header>
+		<section class="container-items">
+			<main class="item">
+				<figure>
+					<img
+						src="./img/5de2ac5bec17169f50b87445372908c6.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Sneakers Black</h2>
+					<p class="price">$800</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</main>
+			<main class="item">
+				<figure>
+					<img
+						src="./img/8917c6d9021d439d5574cd8e596d14f0.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Sneakers Rose</h2>
+					<p class="price">$200</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</main>
+			<main class="item">
+				<figure>
+					<img
+						src="./img/ddc2612e1b6c1c807373351ed1224c2f.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>sneakers Orange</h2>
+					<p class="price">$500</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</main>
+			<main class="item">
+				<figure>
+					<img
+						src="./img/zapas.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Sneakers White</h2>
+					<p class="price">$900</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</main>
+			<main class="item">
+				<figure>
+					<img
+						src="./img/sneakers.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<nav class="info-product">
+					<h2>Sneakers Yellow</h2>
+					<p class="price">$500</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</nav>
+			</main>
+			<div class="elemets_contac">
+				<form id="form" class="form">  
+					<label for="info">¡Pon tus datos si quieres recibir informacion de promociones!</label>                
+					<label for="names">Nombres:</label>
+					<input type="text" id="names">
+					<label for="lastNames">Apellidos:</label>
+					<input type="text" id="lastNames">
+					<label for="mail">Correo Electrónico:</label>
+					<input type="email" id="mail">
+					<label for="celphone">Celular:</label>
+					<input type="number" id="celphone">
+					<label class="labelPolitica" for="checkPolitica">acepta que Shoes One utilice su informacion</label>
+					<input class="checPolitica" type="checkbox" id="checkPolitica"> 
+					<button type="submit" id="btnSend" class="button_send">Enviar</button>
+					<button type="reset" id="btnClear" class="button_clear">Limpiar</button>
+				</form>  
+	    	</div>
+		</section>
+
+		<script src="./dist/main.js"></script>
+		<script src="./dist/formulario.js"></script>
+	</body>
+</html>

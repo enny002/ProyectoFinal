@@ -1,0 +1,122 @@
+<!DOCTYPE html><!--informa al navegador qué versión de HTML usa-->
+<html lang="es"><!--especifica el idioma-->
+<head><!---->
+    <a name="top"></a>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Enlace a los estilos-->
+    <link rel="stylesheet" href="./css/style.css"><!---->
+    
+    <!--Fuentes-->   
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <title>Shoes-One</title>
+    <!--muestra error 404--><link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--muestra error 404--><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <!--muestra fuente--><link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header"><!--representa el header un grupo de ayudas introductorias-->
+    <div class="container">
+    <div class="logo">
+    <img src="./img/MicrosoftTeams-image (4).png" alt="logo kanelas"><!---->
+    </div><!--Su tarea principal es, crear y delimitar áreas que luego puedan ser formateadas mediante CSS.-->
+    <div class="menu">
+    <nav>
+    <ul class="item"><!--ul crea lista no ordenada-->
+    <li><a href="#top">Principal</a></li><!---->
+    <li><a href="../Catalogo/catalogo.html">Cátalogo</a></li><!---->
+    <li><a href="#Footer">Contacto</a></li><!--esta linea nos permite deplazarnos al final de la pagina para conocer mas informacion de la empresa -->                 
+    </ul>
+        </nav>
+        </div>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <section class="container_p">
+            <h1>Compra los mejores SNEAKERS</h1><!--frase principal del texto-->
+            <p class="definicion">Shoes-One nació como una alternativa a distintas tiendas de ropa online con el fin de entregar a los colombianos un nuevo estilo de vida en base costo y calidad. Es por eso, que en Shoes-One encontrarás las mejores ofertas y material de construcción en prendas de vestir.
+            </p>
+            <div class="container_button">
+               <!--esta linea conecta con el catalogo--> <a href="../Catalogo/catalogo.html"><button type="button" class="button_lp">Conoce Más</button></a>
+            </div><!---->
+        </section>
+
+        <section class="containers container_marcas">        
+            <h2 class="subTitle">Las Mejores Marcas</h2>
+            <ul class="marcas">
+                <li>
+                    <a href="../Catalogo/catalogo.html"><!--El href es un atributo que se utiliza para hacer referencia a otro documento. -->
+                        <img class="marcas" src="./img/zapato1.png" alt="">
+                    </a>
+                </li>
+                <li><!--elementos de una lista--> 
+                    <a href="../Catalogo/catalogo.html">
+                        <img class="marcas" src="./img/zapato2.png" alt=""><!--muestra la imagen en el catalogo-->
+                    </a>
+                </li>
+                <li>
+                    <a href="../Catalogo/catalogo.html">
+                        <img class="marcas" src="./img/zapato3.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="../Catalogo/catalogo.html">
+                        <img class="marcas" src="./img/zapato4.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="containers container_zapatos">                      
+            <h2 class="subTitle">Tenemos Todos los Estilos</h2>
+            <ul class="zapatos">
+                <li>
+                    <a href="../Catalogo/catalogo.html">
+                        <img class="zapatos" src="./img/zapato5.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="../Catalogo/catalogo.html">
+                        <img class="zapatos" src="./img/zapato6.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="../Catalogo/catalogo.html">
+                        <img class="zapatos" src="./img/zapato7.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="../Catalogo/catalogo.html">
+                        <img class="zapatos" src="./img/zapato8.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer id= "Footer" class="footer"><!--El footer es la parte inferior de una página web-->
+        <section class="container_footer"><!---->
+            <h2 class="subTitle">Síguenos en nuestras redes sociales</h2>
+                <p class="contacto">EMAIL: Shoes-One@gmail.com <br> 
+                    NUMERO: 320 4474231 <br> DIRECCION: CRA 1C #42-31 
+            <ul class="social_net">
+                <li>
+                    <a href=""><!---->
+                        <img class="nets" src="./img/instagram.png" alt="">
+                    </a><!--define un hipervínculo, el cual se utiliza para vincular de una página a otra. -->
+                </li>
+                <li>
+                    <a href="">
+                        <img class="nets" src="./img/facebook.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <p class="Sede">Vistanos en nuestra sede Principal</p><br>
+            <!----><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6687.300947059764!2d-74.04040308586191!3d4.719094630507757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f855c3cda67a7%3A0xc0b1308a5e40e7ce!2sEdificio%20Monteverde%2C%20Cedritos!5e0!3m2!1ses!2sco!4v1677098352268!5m2!1ses!2sco" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </footer>
+    <!--enlaza al api--><script src="./dist/api.js"></script>
+    <script src="https://kit.fontawesome.com/45ebcf5970.js" crossorigin="anonymous"></script>
+    <!--codigo muerto--><script type="module" src="./dist/app.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>    
+</body>
+</html>
