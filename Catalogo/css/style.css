@@ -1,6 +1,6 @@
 /* Globales */
-*::after,
-*::before,
+*::after, /*crea un pseudo-elemento que es el último hijo del elemento seleccionado. Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad content.Es en linea (inline) de forma predeterminada.*/
+*::before,/*crea un pseudoelemento que es el primer hijo del elemento seleccionado. Es usado normalmente para añadir contenido estético a un elemento, usando la propiedad content. Este elemento se muestra en línea con el texto de forma predeterminada.*/
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@
 body{
     background-color: rgb(250, 248, 246);
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1200px;/*se utiliza para establecer el ancho máximo de un elemento especificado.*/
     font-family: 'Lato';
     color: #333;
     font-family: 'Chakra Petch', sans-serif;
@@ -23,7 +23,7 @@ body{
     font-family: 'Chakra Petch', sans-serif;
 }
 
-.icon-cart:hover{
+.icon-cart:hover{ 
     cursor: pointer;
 }
 
@@ -35,7 +35,7 @@ img{
 header{
     background-color: rgb(197, 173, 148);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;/*define cómo el navegador distribuye el espacio entre y alrededor de los elementos de contenido a lo largo del eje principal de un contenedor flexible y el eje en línea de un contenedor de cuadrícula.*/
     padding: 10px 0 20px 0;
     font-family: 'Chakra Petch', sans-serif;
     border-radius: 10px;
@@ -43,7 +43,7 @@ header{
 .item>li{
     display:inline-block;
     padding: 0% 2%;
-    list-style: none;
+    list-style: none;/* le permite establecer todas las propiedades de estilo de lista a la vez.*/
     border:2px rgb(209, 212, 224);
 }
 .item>li a{
@@ -59,7 +59,7 @@ header{
 }
 
 .count-products{
-    position: absolute;
+    position: absolute;/*se fija con respecto a la esquina superior izquierda de la página, a menos que ese elemento tenga un antepasado posicionado (es decir, con un valor relative, absolute o fixed para position), en cuyo caso su posición se fija con respecto a la esquina superior izquierda de ese antepasado.*/
     top: 55%;
     right: 0;
 
@@ -69,8 +69,8 @@ header{
     height: 25px;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;/*define cómo distribuye el navegador el espacio entre y alrededor de los elementos de contenido a lo largo del eje principal de un contenedor flexible y del eje en línea de un contenedor de rejilla.*/
+    align-items: center;/*establece el valor align-self en todos los hijos directos como grupo. En Flexbox, controla la alineación de los elementos en el eje transversal. En Grid Layout, controla la alineación de los elementos en el Eje de Bloques dentro de su área de rejilla.*/
     border-radius: 50%;
 }
 
@@ -84,7 +84,7 @@ header{
     right: 0;
     background-color:rgb(197, 173, 148);
     width: 400px;
-    z-index: 1;
+    z-index: 1;/*indica el orden de un elemento posicionado y sus descendientes. Cuando varios elementos se superponen, los elementos con mayor valor z-index cubren aquellos con menor valor.*/
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
     border-radius: 10px;
     
@@ -93,7 +93,7 @@ header{
 .cart-product{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;/*define cómo el navegador distribuye el espacio entre y alrededor de los elementos de contenido a lo largo del eje principal de un contenedor flexible y el eje en línea de un contenedor de cuadrícula.*/
     padding: 30px;
 
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
@@ -126,7 +126,7 @@ header{
     height: 25px;
 }
 
-.icon-close:hover{
+.icon-close:hover{/*se puede usar para probar si el mecanismo de entrada principal del usuario puede pasar el mouse sobre los elementos.*/
     color: rgb(197, 173, 148);
     cursor: pointer;
 }
@@ -136,7 +136,7 @@ header{
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-    gap: 20px;
+    gap: 20px;/**/
 }
 
 .cart-total h3{
@@ -149,7 +149,7 @@ header{
     font-weight: 900;
 }
 
-.hidden-cart{
+.hidden-cart{/**/
     display: none;
 }
 
@@ -159,7 +159,7 @@ header{
 /* Main */
 .container-items{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);/**/
     gap: 20px;
 }
 
@@ -176,15 +176,15 @@ header{
     height: 300px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
-    transition: all .5s;
+    transition: all .5s;/**/
 }
 
-.item figure{
-    overflow: hidden;
+.item figure{/**/
+    overflow: hidden;/**/
 }
 
 .item:hover img{
-    transform: scale(1.2);
+    transform: scale(1.2);/**/
 }
 
 .info-product{
@@ -207,16 +207,16 @@ header{
     background-color: #000;
     color:rgb(197, 173, 148);
     padding: 15px 10px;
-    cursor: pointer;
+    cursor: pointer;/**/
 }
 
-.cart-empty{
+.cart-empty{/**/ 
     padding: 20px;
-    text-align: center;
+    text-align: center;/**/
 }
 
 
-.hidden{
+.hidden{/**/
     display: none;
 }
 
@@ -230,12 +230,12 @@ header{
 .form>input {
     padding: 10px 2px;
     border: none;
-    border-bottom: 1px solid rgb(197, 173, 148);
+    border-bottom: 1px solid rgb(197, 173, 148);/**/
     outline: none;
 }
 
-.button_send,
-.button_clear {
+.button_send,/**/
+.button_clear {/**/
     display: inline;
     width: 30%;
     margin-top: 2%;

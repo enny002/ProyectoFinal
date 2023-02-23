@@ -1,10 +1,8 @@
-import {Validacion} from "./Validacion.js";
+import {Validacion} from "./Validacion.js";/* */
 
-/**
- * Instanciar el objeto
- */
+/*Instanciar el objeto*/
 
-const validacion = new Validacion();
+const validacion = new Validacion(); /**/
 const formulario = document.getElementById('form');
 const btn = document.getElementById("btnSend");
 
@@ -17,24 +15,24 @@ const formValid ={
 }
 
 //Validación
-formulario.addEventListener("change", (e)=>{
+formulario.addEventListener("change", (e)=>{/**/
     const inputId = e.target.id;
-    const miValue = e.target.value;
+    const miValue = e.target.value;/**/
     const miClass = e.target.classList;
     const validClass = ()=>{
         miClass.add("is-valid");
-        miClass.remove("is-invalid");
+        miClass.remove("is-invalid");/**/
     };
     const inValidClass = ()=>{
         miClass.add("is-invalid");
         miClass.remove("is-valid");
     };
 
-    switch(inputId){
-        case "names":
-            formValid.nombres = validacion.validNames(miValue);
-            formValid.nombres ? validClass() : inValidClass();
-            console.log(Object.values(formValid));
+    switch(inputId){/**/
+        case "names":/**/
+            formValid.nombres = validacion.validNames(miValue);/**/
+            formValid.nombres ? validClass() : inValidClass();/**/
+            console.log(Object.values(formValid));/**/
             break;
         case "mail":
             formValid.mail = validacion.validMail(miValue);
@@ -50,11 +48,11 @@ formulario.addEventListener("change", (e)=>{
 });
 
 //Envío del formulario
-btn.addEventListener("click", (e)=>{
-    e.preventDefault();
-    if (validacion.validarForm(formValid)=== -1){
-        alert("Enviando Formulario");
-        let datos = new FormData(document.getElementById('form'));
+btn.addEventListener("click", (e)=>{/**/
+    e.preventDefault();/**/
+    if (validacion.validarForm(formValid)=== -1){/**/
+        alert("Enviando Formulario");/**/
+        let datos = new FormData(document.getElementById('form'));/**/
         console.log(datos);
     }
 });
