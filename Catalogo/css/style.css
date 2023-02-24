@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: rgb(250, 248, 246);
+    background-color:  rgb(176, 158, 139);;
     margin: 0 auto;
     max-width: 1200px;/*se utiliza para establecer el ancho máximo de un elemento especificado.*/
     font-family: 'Lato';
@@ -33,18 +33,19 @@ img{
 
 /* Header */
 header{
-    background-color: rgb(197, 173, 148);
+    background-color: rgb(157, 142, 126);
     display: flex;
     justify-content: space-between;/*define cómo el navegador distribuye el espacio entre y alrededor de los elementos de contenido a lo largo del eje principal de un contenedor flexible y el eje en línea de un contenedor de cuadrícula.*/
-    padding: 10px 0 20px 0;
+    padding: 25px 0 15px 0;
     font-family: 'Chakra Petch', sans-serif;
     border-radius: 10px;
+
 }
 .item>li{
     display:inline-block;
     padding: 0% 2%;
     list-style: none;/* le permite establecer todas las propiedades de estilo de lista a la vez.*/
-    border:2px rgb(209, 212, 224);
+
 }
 .item>li a{
     color: rgb(27, 27, 27);
@@ -64,7 +65,7 @@ header{
     right: 0;
 
     background-color: #000;
-    color:  #d80000;
+    color:  #eadede;
     width: 25px;
     height: 25px;
 
@@ -136,7 +137,7 @@ header{
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-    gap: 20px;/**/
+    gap: 20px;/*especifica los canales entre las filas y las columnas de la cuadrícula.*/
 }
 
 .cart-total h3{
@@ -159,7 +160,7 @@ header{
 /* Main */
 .container-items{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);/**/
+    grid-template-columns: repeat(3, 1fr);/*define los nombres de línea y las funciones de tamaño de pista de las columnas de la cuadrícula .*/
     gap: 20px;
 }
 
@@ -179,12 +180,12 @@ header{
     transition: all .5s;/**/
 }
 
-.item figure{/**/
-    overflow: hidden;/**/
+.item figure{
+    overflow: hidden;/*especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar el contenido excedente en un elemento a nivel de bloque.*/
 }
 
 .item:hover img{
-    transform: scale(1.2);/**/
+    transform: scale(1.2);/* te permite modificar el espacio de coordenadas del modelo de formato visual CSS. Usándola, los elementos pueden ser trasladados, rotados, escalados o sesgados de acuerdo a los valores establecidos.*/
 }
 
 .info-product{
@@ -207,44 +208,50 @@ header{
     background-color: #000;
     color:rgb(197, 173, 148);
     padding: 15px 10px;
-    cursor: pointer;/**/
+    cursor: pointer;/*especifica el tipo de cursor que se mostrara cuando este se encuentre sobre un elemento.*/
 }
 
 .cart-empty{/**/ 
     padding: 20px;
-    text-align: center;/**/
+    text-align: center;/*especifica la alineación horizontal del texto de un elemento.*/
 }
 
 
-.hidden{/**/
+.hidden{/*puede ser usado para ocultar elelementos de la página que no pueden ser usados hasta que el proceso de login se haya completado . El explorador no dibujará dichos elementos .*/
     display: none;
 }
 
 /*Formularios*/
-.form * {
+
+.form *{
     display: inline-block;
     width: 80%;
     margin: 1% 0;
     font-size: 20px;
+    text-align: center;
+}
+.form{
+    margin-left: 10%;
+    width: 100%;
 }
 .form>input {
     padding: 10px 2px;
     border: none;
-    border-bottom: 1px solid rgb(197, 173, 148);/**/
+    border-bottom: 1px solid rgb(197, 173, 148);/*permite de definir de una vez todas las propiedades individuales border-bottom-color, border-bottom-style, y border-bottom-width, las cuales describen el color, estilo y ancho del borde inferior de un elementos.*/
     outline: none;
 }
 
-.button_send,/**/
-.button_clear {/**/
+.button_send,
+.button_clear {
     display: inline;
     width: 30%;
     margin-top: 2%;
-    margin-right: 2%;
+    margin-left: 6%;
     margin-bottom: 2%;
     padding: 20px;
-    background-color: rgb(197, 173, 148);
+    background-color: rgb(195, 161, 124);
     ;
-    border: 1px solid rgb(197, 173, 148);
+    border: 1px solid rgb(195, 137, 75);
     ;
     border-radius: 5%;
     color: #4b4949;
@@ -252,7 +259,3 @@ header{
     font-weight: 500;
     cursor: pointer;
 }
-
-
-
-
